@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    border: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header-conatiner{
+    display: flex;
+    justify-content: center;
+    background: #0F0F0F;
+    /* background-color: gold; */ 
+    height: 65px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.Header-wrapper{
+    /* background: #0F0F0F; */
+    height: 100%;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftHeader{
+    width: 13%;
+    height: 100%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leftHeader .img-meni{
+    width: 40px;
+}
+
+.header-middle{
+    height: 100%;
+    width: 45%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.search-bar{
+    width: 90%;
+    height: 75%;
+    border: 3px solid #3D3D3D;
+    border-radius: 30px;
+    
+    background: #0F0F0F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s-bar{
+    width: 85%;
+    height: 100%;
+    color: white;
+    outline: 0;
+    background-color: transparent;
+    margin-left: 10px;
+}
+.search-icon{
+    width: 30px;
+    /* background-color: blue; */
+}
+
+.mic-icon{
+    width: 7%;
+    height: 75%;
+    background: #3D3D3D;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50px;
+}
+
+.mic-iconc{
+    height: 60%;
+}
+.header-right{
+    width: 15%;
+    height: 100%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.Create{
+    width: 45%;
+    outline: 0;
+    border: 0;
+    height: 70%;
+    background: #3D3D3D;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 12px;
+}
+
+.profile{
+    height: 80%;
+    width: 20%;
+    border-radius: 50%;
+    object-fit: cover;
+    /* display: flex; */
+}
+
+/* .left-body{
+    width: 15%;
+    color: white;
+    height: 1200px;
+    background: black;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.right-body{
+    width: 85%;
+    height: 1200px;
+    background-color: #3D3D3D;
+    overflow-y: auto;
+
+}
+
+.App-body{
+    display: flex;
+    height: auto;
+    width: 100%;
+} */
+
+/* CSS for App-body layout */
+.App-body {
+    display: flex;
+    height: calc(100vh - 60px); 
+  }
+  
+  .left-body {
+    width: 250px;
+    overflow-y: auto;
+    height: 100%;
+    background-color: black;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* Makes the scrollbar invisible */
+  }
+  
+  /* For WebKit browsers like Chrome and Safari */
+  .left-body::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .left-body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .left-body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+  }
+  .right-body {
+    flex: 1;
+    overflow-y: auto; /* enables vertical scrolling */
+    background: black;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgba(255, 255, 255, 0.5) transparent; /* visible thin scrollbar */
+  }
+  
+  /* WebKit browsers */
+  .right-body::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .right-body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .right-body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .right-body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* --- Category Buttons --- */
+  .rightBodyHead {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 15px;
+    background: black;
+  }
+  
+  .rightBodyHead::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for category bar */
+  }
+  
+  .rightBodyHead button {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+  }
+  
+  .rightBodyHead button:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .rightBodyHead button.select {
+    background: white;
+    color: black;
+    font-weight: bold;
+  }
+  
+
+  .leftIcon{
+    width: 30px;
+    fill: white;
+    /* background: green; */
+  }
+
+  .height{
+    width: 100%;
+    height: 60px;
+    /* background: blue; */
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: white;
+    justify-content: space-between;
+  }
+
+  .hei :hover{
+    background-color: #CCCCCC;
+    /* width: 100%; */
+    border-radius: 12px;
+    transition: .5s;
+    color: #0F0F0F;
+  }
+
+  .sty{
+    width: 80%;
+    /* background-color: green; */
+  }
+
+  .innerRightBody{
+    height: auto;
+    /* background-color: red; */
+    width: 95%;
+  }
+
+  .innerLeft{
+    width: 85%;
+    /* height: 100vh; */
+    /* background: gold; */
+    margin-left: 25px;
+    border-bottom: 1px solid white;
+    color: white;
+  }
+
+  .rightBodyHead {
+    width: 95%;
+    height: 90px;
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    overflow-x: scroll; /* Allow scrolling */
+    white-space: nowrap;
+    padding: 10px;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+  }
+  
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+  .rightBodyHead::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .select, .selects {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .select:hover, .selects:hover {
+    background-color: #ccc;
+    color: black;
+    transition: .5s;
+  }
+  
+
+  .select{
+  padding: 10px 2opx;
+    font-size: 15px;
+    border-radius: 12px;
+  }
+
+  .selects{
+    padding: 10px 2opx;
+    background-color: #3F3F3F;
+    color: white;
+    font-size: 15px;
+    border-radius: 12px;
+  }
+
+  .rightBodyContent{
+    width: 100%;
+    height: 400px;
+    /* background-color: #3D3D3D; */
+    border-radius: 12px;
+    outline: 0;
+  }
+
+  .bodyVideo{
+    width: 100%;
+    border-radius: 22px;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .Captionn{
+    width: 100%;
+    height: 30%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    
+  }
+
+  .cationimg{
+    width: 12%;
+    /* background: pink; */
+    height: 50%;
+    border-radius: 50%;
+   
+  }
+  .video-content {
+    /* background-color: pink; */
+    flex-wrap: wrap;
+    outline: 0;
+    display: flex;
+    width: 100%;
+    gap: 20px; /* Add space between video items */
+    padding: 10px;
+     /* Optional: adds padding around the container */
+  }
+  
+  .bodeylefta{
+    width: 70%;
+    height: 1700px;
+    background: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.bodeyleftainner{
+  height: 1600px;
+  width: 90%;
+  /* background: pink; */
+}
+
+.vidoin{
+  width: 100%;
+  height: 710px;
+  border-radius: 22px;
+  margin-top: 10px;
+  outline: 0;
+  /* background-color: pink; */
+}
+
+.cap{
+  width: 100%;
+  height: auto;
+  /* background: green; */
+  color: white;
+}
+
+.cationimgg{
+width: 60%;
+height: 70%;
+border-radius: 100%;
+object-fit: cover;
+}
+
+.cationimggg{
+  width: 5%;
+  height: 50%;
+  border-radius: 100%;
+  object-fit: cover;
+  }
+
+.capppp{
+  width: 10%;
+  height: 100px;
+  /* background: gold; */
+  display: flex ;
+  align-items: center;
+}
+
+.capp{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.Cpa{
+  width: 90%;
+  /* background-color: gold; */
+  height: 100px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.Cpa button{
+  width: 150px;
+  height: 50px;
+  margin: 22px;
+  background: #3F3F3F;
+  color: white;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+
+.showmore{
+  width: 100%;
+  height: 200px;
+  margin-top: 12px;
+  background-color: #3F3F3F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: white;
+}
+
+.comments{
+  width: 100%;
+  /* background: hotpink; */
+  margin-top: 12px;
+  height: 400px;
+  color: white;
+}
+
+.commentsin{
+  width: 90%;
+  height: 60px;
+  background: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+  outline: 0;
+}
+
+.cappppp{
+  /* width: 10%; */
+  height: 100px;
+  /* background: gold; */
+  display: flex ;
+  margin-top: 12px;
+  justify-content: space-between;
+}
+
+.commmmm{
+  width: 100%;
+  height: 100px;
+  /* background: #3F3F3F; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.scre{
+  width: 90%;
+  /* background: red; */
+}
+
+.videoSuggestion{
+  background: #0F0F0F;
+  height: 1700px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-right: 1px solid white; */
+}
+
+.innervideoSuggestion{
+  /* background-color: pink; */
+  width: 95%;
+  height: 95%;
+  border-radius: 12px;
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videosugg{
+  width: 95%;
+  height: 150px;
+  /* background: green; */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* .videosugg :Hover{
+  background-color: #3F3F3F;
+  color: black;
+  transition: .5s;
+  width: 100%;
+  height: 100%;
+} */
+
+.videosus{
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  /* background: pink; */
+}
+
