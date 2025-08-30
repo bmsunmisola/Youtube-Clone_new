@@ -8,7 +8,7 @@ import {
 
 const BodyLeft = () => {
   const menuItems = [
-    { id: 1, name: 'Home', icon: <Home />, path: '/' }, // Added path for Home
+    { id: 1, name: 'Home', icon: <Home />, path: '/' }, 
     { id: 2, name: 'Short', icon: <Shorts /> },
     { id: 3, name: 'Subscription', icon: <Subscriptions /> },
     { id: 4, name: 'Youtube Music', icon: <YoutubeMusic /> },

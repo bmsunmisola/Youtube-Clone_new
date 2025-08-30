@@ -74,7 +74,6 @@ const Leftvideo = () => {
           </div>
         </div>
 
-        {/* Comments Section (Static for now) */}
         <div className="comments">
           <h2>4,187 Comments</h2>
           <div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
-import { get_popular_videos, search_videos } from '../Apis/Api'; // <-- Add search_videos
+import { get_popular_videos, search_videos } from '../Apis/Api'; 
 
 const Bodyright = ({ searchQuery }) => {
   const [vids, setVids] = useState([]);
@@ -9,7 +9,7 @@ const Bodyright = ({ searchQuery }) => {
   const [err, setErr] = useState(null);
 
   const categories = [
-    "All", "Music", "Nollywood", "Otaku", "Damilola Bamiloye",
+    "All", "Music", "Nollywood", "Cartoons", "Trending",
     "Naruto", "Podcasts", "Contemporary Worship Music",
     "Live", "Dramedy", "Couples"
   ];
@@ -21,8 +21,8 @@ const Bodyright = ({ searchQuery }) => {
       try {
         setLoading(true);
         const response = searchQuery
-          ? await search_videos(searchQuery) // fetch search results
-          : await get_popular_videos(); // fetch popular videos by default
+          ? await search_videos(searchQuery) 
+          : await get_popular_videos(); 
 
         const items = Array.isArray(response)
           ? response
@@ -38,7 +38,7 @@ const Bodyright = ({ searchQuery }) => {
 
     fetchData();
     return () => { cancelled = true; };
-  }, [searchQuery]); // Re-fetch whenever searchQuery changes
+  }, [searchQuery]); 
 
   if (loading) return <div className="right-body"><div className="innerRightBody">Loading…</div></div>;
   if (err) return <div className="right-body"><div className="innerRightBody">Failed to load videos.</div></div>;
