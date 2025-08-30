@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Header from './Header';
 import BodyLeft from './BodyLeft';
 
-const API_KEY = 'AIzaSyAE1RGgFoKm9oPyjl6rinhdj70kHlAxy9Y';
+const API_KEY = 'AIzaSyDE_GmRBGkfwPIAwDFbZqdIl95x5fs-jug';
 
 const Videopage = () => {
   const { videoid } = useParams();

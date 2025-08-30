@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import profileImg from '../assests/profile.jpg';
 
-const API_KEY = 'AIzaSyAE1RGgFoKm9oPyjl6rinhdj70kHlAxy9Y'; 
+const API_KEY = 'AIzaSyDE_GmRBGkfwPIAwDFbZqdIl95x5fs-jug'; 
 
 const Leftvideo = () => {
   const { videoid } = useParams();
